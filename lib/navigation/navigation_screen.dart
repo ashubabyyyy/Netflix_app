@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:netflix_app/login/signin/signin.dart';
 import 'package:netflix_app/main_screen/netflix_home.dart';
 import 'package:netflix_app/main_screen/search_screen.dart';
+import 'package:netflix_app/screens/detail_screen.dart';
 import 'package:netflix_app/screens/whos_watching.dart';
 
 class Navigationscreen extends StatefulWidget {
@@ -15,7 +16,7 @@ class _NavigationscreenState extends State<Navigationscreen> {
   int _currentIndex = 0;
   final List<Widget> _screens = [
     NetflixHome(),
-    Signin(),
+    DetailScreen(),
     SearchScreen(),
     WhosWatching(),
   ];

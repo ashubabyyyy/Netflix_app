@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:netflix_app/model/search_model.dart';
+import '../model/search_model.dart';
 
 class SearchProvider extends ChangeNotifier {
   final List<SearchModel> _allMovies = [
     SearchModel(title: 'Dhokha', image: "assets/images/dhokha.png"),
-    SearchModel(
-      title: 'Code Name Tiranga',
-      image: "assets/images/codename.png",
-    ),
+    SearchModel(title: 'Code Name Tiranga', image: "assets/images/codename.png"),
     SearchModel(title: 'RRR', image: "assets/images/rrr.png"),
     SearchModel(title: 'Bahubali 2', image: "assets/images/bahubali.png"),
     SearchModel(title: 'Thar', image: "assets/images/thar.png"),
@@ -16,6 +13,7 @@ class SearchProvider extends ChangeNotifier {
   ];
 
   List<SearchModel> _filteredMovies = [];
+
   List<SearchModel> get filteredMovies =>
       _filteredMovies.isEmpty ? _allMovies : _filteredMovies;
 
@@ -24,9 +22,8 @@ class SearchProvider extends ChangeNotifier {
       _filteredMovies = [];
     } else {
       _filteredMovies = _allMovies
-          .where(
-            (movie) => movie.title.toLowerCase().contains(query.toLowerCase()),
-          )
+          .where((movie) =>
+              movie.title.toLowerCase().contains(query.toLowerCase()))
           .toList();
     }
     notifyListeners();

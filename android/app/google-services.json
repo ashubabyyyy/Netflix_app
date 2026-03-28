@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "126854682947",
+    "project_id": "eat-rem",
+    "storage_bucket": "eat-rem.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126854682947:android:fc43aca54549c7e9e8f7f6",
+        "android_client_info": {
+          "package_name": "com.example.food_remainder_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbE7QNUBx5e1-ZdNeGzb6mumhbNNCFe9k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126854682947:android:5ae066ad36c53539e8f7f6",
+        "android_client_info": {
+          "package_name": "com.example.netflix_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbE7QNUBx5e1-ZdNeGzb6mumhbNNCFe9k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
